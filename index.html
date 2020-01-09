@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>lection 7</title>
+</head>
+<body>
+	<h5>Задание: 
+		<p>
+			Привет. Вам нужно написать свою реализацию метода forEach. Это должна быть функция, которая принимает массив и функцию-коллбэк, которая будет вызвана для 
+			<br>каждого элемента массива
+		</p>
+</h5>
+
+<script>
+	var array = ['a','b','c'];
+
+	function forEach(array, callback) {
+		for (var elem of array){
+			callback(elem);
+		}
+	}
+	forEach(['a','b','c'], function(elem) {
+		console.log(elem);
+	})
+
+</script>
+</body>
+</html>
