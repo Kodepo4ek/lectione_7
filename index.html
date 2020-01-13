@@ -13,10 +13,10 @@
 </h5>
 
 <script>
-	var array = ['a','b','c'];
 
 	function forEach(array, callback) {
-		for (var elem of array){
+		for (var i = 0; i < array.length; i++){
+			var elem = array[i];
 			callback(elem);
 		}
 	}
